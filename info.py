@@ -85,7 +85,7 @@ if len(OPENAI_API) == 0:
     print('Info - OPENAI_API is empty')
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://vebro380:BjGb0F85VABmUqvO@cluster0.yeosutd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 if len(DATABASE_URL) == 0:
     print('Error - DATABASE_URL is missing, exiting now')
     exit()
@@ -93,11 +93,11 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/vpcreatzsupport')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/vpcreatz_update')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/vpcreatz_film_mainia')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/vpcreatz_update")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/vpcreatz_update")
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+rcL5Y7WB518yYzZl')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+7vI6QkoGe51lY2E9')
+FILMS_LINK = environ.get('FILMS_LINK', '')
+TUTORIAL = environ.get("TUTORIAL", "")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/How_To_Open_AllLinks/21")
 
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
@@ -106,8 +106,8 @@ MAX_BTN = int(environ.get('MAX_BTN', 10))
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'english hindi telugu tamil kannada malayalam').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "mdiskshortner.link")
-SHORTLINK_API = environ.get("SHORTLINK_API", "36f1ae74ba1aa01e5bd73bdd0bc22aa915443501")
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "")
+SHORTLINK_API = environ.get("SHORTLINK_API", "")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
